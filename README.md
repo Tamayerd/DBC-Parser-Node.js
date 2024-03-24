@@ -2,7 +2,7 @@
 
 
 ## Description
-This project utilizes the Dbc library to parse a CAN database file (DBC file) and extract JSON data from it. It also demonstrates how to use the extracted JSON data to process and manipulate CAN messages and signals in a Node.js environment.
+This project utilizes the Dbc library to parse a CAN database file (DBC file) and extract JSON data from it. It also demonstrates how to use the extracted JSON data to process and manipulate CAN messages and signals in a Node.js environment.(Sequelize)
 
 ## Installation
 To run this project, make sure you have Node.js installed on your system. Then, clone this repository and install the dependencies using the following commands:
