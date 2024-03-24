@@ -1,0 +1,367 @@
+{
+  "version": "",
+  "messages": [
+    {
+      "id": 10,
+      "dlc": 8,
+      "name": "ApplicationECU_TestResult_Tx",
+      "sendingNode": "ApplicationECU",
+      "signals": [
+        {
+          "name": "ApplicationECU_SG_TestResult0_Tx",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["TestECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        },
+        {
+          "name": "ApplicationECU_SG_TestResult1_Tx",
+          "endian": "Intel",
+          "startBit": 8,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["TestECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 20,
+      "dlc": 8,
+      "name": "TestECU_TestCode_Tx",
+      "sendingNode": "TestECU",
+      "signals": [
+        {
+          "name": "TestECU_SG_TestCode0_Tx",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["ApplicationECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        },
+        {
+          "name": "TestECU_SG_TestCode1_Tx",
+          "endian": "Intel",
+          "startBit": 8,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["ApplicationECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 1264,
+      "dlc": 8,
+      "name": "UDS_RX_FUNC",
+      "sendingNode": "TestECU",
+      "signals": [
+        {
+          "name": "UDS_RX_FUNC_SIGNAL",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["ApplicationECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 1248,
+      "dlc": 8,
+      "name": "UDS_RX_PHY",
+      "sendingNode": "TestECU",
+      "signals": [
+        {
+          "name": "UDS_RX_PHY_SIGNAL",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["ApplicationECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 1232,
+      "dlc": 8,
+      "name": "UDS_TX",
+      "sendingNode": "ApplicationECU",
+      "signals": [
+        {
+          "name": "UDS_TX_SIGNAL",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["TestECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 2015,
+      "dlc": 8,
+      "name": "Diag_OBD_ON_CAN_Rx",
+      "sendingNode": "TestECU",
+      "signals": [
+        {
+          "name": "OBD_RX_SIGNAL",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["ApplicationECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 2024,
+      "dlc": 8,
+      "name": "Diag_OBD_ON_CAN_Tx",
+      "sendingNode": "ApplicationECU",
+      "signals": [
+        {
+          "name": "OBD_TX_SIGNAL",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 8,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["TestECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int8"
+        }
+      ],
+      "description": null,
+      "attributes": [],
+      "signalGroups": []
+    },
+    {
+      "id": 253,
+      "dlc": 1,
+      "name": "ApplicationECU_TestResFD_Tx",
+      "sendingNode": "6",
+      "signals": [
+        {
+          "name": "ApplicationECU_SG_TestResFD_Tx",
+          "endian": "Intel",
+          "startBit": 0,
+          "length": 16,
+          "signed": true,
+          "max": 0,
+          "min": 0,
+          "factor": 1,
+          "offset": 0,
+          "multiplex": "",
+          "receivingNodes": ["TestECU"],
+          "unit": "",
+          "valueTable": null,
+          "description": null,
+          "attributes": [],
+          "dataType": "int16"
+        }
+      ],
+      "description": null,
+      "attributes": [
+        {
+          "name": "VFrameFormat",
+          "type": "Message",
+          "dataType": "ENUM",
+          "options": [
+            "StandardCAN",
+            "ExtendedCAN",
+            "StandardCAN_FD",
+            "ExtendedCAN_FD"
+          ],
+          "defaultValue": "StandardCAN",
+          "value": "2",
+          "min": null,
+          "max": null
+        }
+      ],
+      "signalGroups": []
+    }
+  ],
+  "description": null,
+  "busSpeed": null,
+  "nodes": [
+    {
+      "name": "ApplicationECU",
+      "description": null,
+      "attributes": []
+    },
+    {
+      "name": "TestECU\r",
+      "description": null,
+      "attributes": []
+    }
+  ],
+  "valueTables": {},
+  "attributes": [
+    {
+      "name": "BusType",
+      "type": "Global",
+      "dataType": "STRING",
+      "options": null,
+      "defaultValue": "CAN",
+      "value": "CAN FD",
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "CANFD_BRS",
+      "type": "Message",
+      "dataType": "ENUM",
+      "options": ["0", "1"],
+      "defaultValue": "0",
+      "value": "0",
+      "min": null,
+      "max": null
+    },
+    {
+      "name": "SamplePointMax",
+      "type": "Global",
+      "dataType": "FLOAT",
+      "options": null,
+      "defaultValue": null,
+      "value": "81.4",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "newSymbols": [
+    "NS_DESC_",
+    "CM_",
+    "BA_DEF_",
+    "BA_",
+    "VAL_",
+    "CAT_DEF_",
+    "CAT_",
+    "BA_DEF_DEF_",
+    "EV_DATA_",
+    "ENVVAR_DATA_",
+    "SGTYPE_",
+    "SGTYPE_VAL_",
+    "BA_DEF_SGTYPE_",
+    "BA_SGTYPE_",
+    "SIG_TYPE_REF_",
+    "VAL_TABLE_",
+    "SIG_GROUP_",
+    "SIG_VALTYPE_",
+    "SIGTYPE_VALTYPE_",
+    "BO_TX_BU_",
+    "BA_DEF_REL_",
+    "BA_REL_",
+    "BA_DEF_DEF_REL_",
+    "BU_SG_REL_",
+    "BU_EV_REL_",
+    "BU_BO_REL_",
+    "SG_MUL_VAL_"
+  ],
+  "environmentVariables": [],
+  "networkBridges": []
+}

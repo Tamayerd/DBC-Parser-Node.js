@@ -1,0 +1,73 @@
+VERSION ""
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+ 
+BS_:
+ 
+BU_: ApplicationECU TestECU
+ 
+ 
+BO_ 10 ApplicationECU_TestResult_Tx: 8 ApplicationECU
+ SG_ ApplicationECU_SG_TestResult0_Tx : 0|8@1- (1,0) [0|0] ""  TestECU
+ SG_ ApplicationECU_SG_TestResult1_Tx : 8|8@1- (1,0) [0|0] ""  TestECU
+ 
+BO_ 20 TestECU_TestCode_Tx: 8 TestECU
+ SG_ TestECU_SG_TestCode0_Tx : 0|8@1- (1,0) [0|0] ""  ApplicationECU
+ SG_ TestECU_SG_TestCode1_Tx : 8|8@1- (1,0) [0|0] ""  ApplicationECU
+ 
+BO_ 1264 UDS_RX_FUNC: 8 TestECU
+ SG_ UDS_RX_FUNC_SIGNAL : 0|8@1- (1,0) [0|0] ""  ApplicationECU
+ 
+BO_ 1248 UDS_RX_PHY: 8 TestECU
+ SG_ UDS_RX_PHY_SIGNAL : 0|8@1- (1,0) [0|0] ""  ApplicationECU
+ 
+BO_ 1232 UDS_TX: 8 ApplicationECU
+ SG_ UDS_TX_SIGNAL : 0|8@1- (1,0) [0|0] ""  TestECU
+ 
+BO_ 2015 Diag_OBD_ON_CAN_Rx: 8 TestECU
+ SG_ OBD_RX_SIGNAL : 0|8@1- (1,0) [0|0] ""  ApplicationECU
+ 
+BO_ 2024 Diag_OBD_ON_CAN_Tx: 8 ApplicationECU
+ SG_ OBD_TX_SIGNAL : 0|8@1- (1,0) [0|0] ""  TestECU
+ 
+BO_ 253 ApplicationECU_TestResFD_Tx: 16 ApplicationECU
+ SG_ ApplicationECU_SG_TestResFD_Tx : 0|16@1- (1,0) [0|0] ""  TestECU
+ 
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "CANFD_BRS" "0";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "SamplePointMax" 81.4;
+BA_ "VFrameFormat" BO_ 253 2;
